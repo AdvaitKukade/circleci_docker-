@@ -6,15 +6,15 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker: 
-          version: 18.09.7
+          version: 17.09.0-ce
       
       - run:
           name: Install Docker client
           command: |
             set -x
-            VER="18.09.7-ce"
-            curl -L -o /tmp/docker-18.09.7-ce.tgz https://download.docker.com/linux/static/stable/x86_64/docker-18.09.7-ce.tgz
-            tar -xz -C /tmp -f /tmp/docker-18.09.7-ce.tgz
+            VER="17.09.0-ce"
+            curl -L -o /tmp/docker-17.09.0-ce.tgz https://download.docker.com/linux/static/stable/x86_64/docker-17.09.0-ce.tgz
+            tar -xz -C /tmp -f /tmp/docker-17.09.0-ce.tgz
             mv /tmp/docker/* /usr/bin
      
       - run: echo "Docker Installed !" 
