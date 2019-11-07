@@ -5,11 +5,12 @@ jobs:
       - image: alpine
     steps:
       - run: echo "In Job_1" 
-   job_2: 
-     docker:
-       - image: alpine
-     steps:
-       - run: echo "In Job_2 
+  job_2: 
+    docker:
+      - image: alpine
+    steps:
+      - run: echo "In Job_2 
+
 workflows:
   workflow_1:
     jobs:
