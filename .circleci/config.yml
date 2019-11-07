@@ -2,12 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: alpine:3.5 
-      
+      - image: alpine
     steps:
       - checkout
-      
-      - setup_remote_docker:
+      - setup_remote_docker: 
           version: 18.09.7
       
       - run:
