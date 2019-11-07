@@ -5,6 +5,7 @@ jobs:
       - image: alpine
     steps:
       - checkout
+      - run: apk update && apk add curl
       - setup_remote_docker: 
           version: 17.09.0-ce
       
