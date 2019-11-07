@@ -17,4 +17,4 @@ jobs:
             tar -xz -C /tmp -f /tmp/docker-18.09.7-ce.tgz
             mv /tmp/docker/* /usr/bin
      
-     - run: echo "Docker Installed !" 
+      - run: echo "Docker Installed !" 
